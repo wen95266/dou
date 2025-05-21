@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#game-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#player-areas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.player-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    min-height: 150px;
+    border-radius: 4px;
+}
+
+.player-area h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.hand {
+    min-height: 50px;
+    border: 1px dashed #eee;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex; /* For card display */
+    flex-wrap: wrap; /* For card display */
+}
+
+.card { /* Example card style */
+    border: 1px solid black;
+    padding: 5px 8px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card.selected {
+    background-color: lightblue;
+    transform: translateY(-5px);
+}
+
+
+#table-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 100px;
+    text-align: center;
+}
+
+#discard-pile {
+    min-height: 40px;
+    border: 1px dashed #eee;
+    padding: 5px;
+}
+
+#controls button, .actions button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#controls button:hover, .actions button:hover {
+    background-color: #0056b3;
+}
+
+#input-join-game-id {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#messages {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    min-height: 30px;
+}
