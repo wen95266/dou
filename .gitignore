@@ -1,0 +1,22 @@
+# IDE & OS files
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Node modules (if you decide to use npm for frontend tools)
+node_modules/
+
+# Build artifacts (if any)
+dist/
+build/
+
+# PHP Composer dependencies (if you use Composer for backend)
+vendor/
+composer.lock
+
+# Log files
+*.log
+
+# Local configuration files that should not be committed
+backend/config.local.php
