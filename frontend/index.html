@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 斗地主</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>斗地主</h1>
+            <div id="game-id-display">游戏ID: 未创建</div>
+        </header>
+
+        <div id="player-areas">
+            <div class="player-area" id="player-0-area">
+                <h2>玩家1 (你)</h2>
+                <div class="hand" id="player-0-hand"></div>
+                <div class="actions">
+                    <button id="btn-bid-1">叫1分</button>
+                    <button id="btn-bid-2">叫2分</button>
+                    <button id="btn-bid-3">叫3分</button>
+                    <button id="btn-no-bid">不叫</button>
+                    <br>
+                    <button id="btn-play-cards">出牌</button>
+                    <button id="btn-pass">过</button>
+                </div>
+            </div>
+            <div class="player-area" id="player-1-area">
+                <h2>玩家2</h2>
+                <div class="hand" id="player-1-hand">（AI/其他玩家）</div>
+            </div>
+            <div class="player-area" id="player-2-area">
+                <h2>玩家3</h2>
+                <div class="hand" id="player-2-hand">（AI/其他玩家）</div>
+            </div>
+        </div>
+
+        <div id="table-area">
+            <h2>牌桌</h2>
+            <div id="discard-pile"></div>
+            <div id="landlord-cards">底牌: </div>
+        </div>
+
+        <div id="controls">
+            <button id="btn-create-game">创建游戏</button>
+            <input type="text" id="input-join-game-id" placeholder="输入游戏ID加入">
+            <button id="btn-join-game">加入游戏</button>
+            <button id="btn-get-state">获取状态 (Debug)</button>
+        </div>
+
+        <div id="messages">
+            <p>欢迎来到斗地主!</p>
+        </div>
+    </div>
+
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
